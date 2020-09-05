@@ -26,20 +26,20 @@ Tested with tflite-runtime 2.1.0 on Raspberry Pi 4 (single core)
 
 ```
 $ python3 train.py --model_name kcnet_pixel4 \
---batch_size 1024 \
---epochs 250 \
---warmup_epochs 5 \
---base_lr 0.4 \
---init_lr 0.1 \
---image_size 192 \
---use_cache \
---imagenet_path $IMAGENET_PATH \
---checkpoint_path $CHECKPOINT_PATH
+  --batch_size 1024 \
+  --epochs 250 \
+  --warmup_epochs 5 \
+  --base_lr 0.4 \
+  --init_lr 0.1 \
+  --image_size 192 \
+  --use_cache \
+  --imagenet_path $IMAGENET_PATH \
+  --checkpoint_path $CHECKPOINT_PATH
 $ python3 convert_quant.py --keras_model_file $KERAS_FILE \
---output_file $TFLITE_FILE \
---image_size 192 \
---imagenet_path $IMAGENET_PATH
+  --output_file $TFLITE_FILE \
+  --image_size 192 \
+  --imagenet_path $IMAGENET_PATH
 $ python3 val_quant.py --tflite_model_file $TFLITE_FILE \
---image_size 192 \
---imagenet_path $IMAGENET_PATH
+  --image_size 192 \
+  --imagenet_path $IMAGENET_PATH
 ```
