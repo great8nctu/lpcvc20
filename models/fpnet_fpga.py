@@ -169,7 +169,7 @@ class MBI():
         return o
 
 
-def kcnet():
+def fpnet():
     x = tf.keras.Input((160, 160, 3))
     w = ConvLayer(16, kernel=3, stride=2, bias=False).call(x)
     w = Hswish().call(w)
@@ -230,7 +230,7 @@ def kcnet():
 
 
 def get_model():
-    model = kcnet()
+    model = fpnet()
     weight_decay = 4e-5
     model = set_model_regularization(model, tf.keras.regularizers.l2(
         weight_decay / 2.0), layers=None, bias_term=False, bn_term=False, depthwise_term=True)
