@@ -46,12 +46,10 @@ $ python3 val_quant.py --tflite_model_file $TFLITE_FILE \
 + MobileNet V3 backbone
 + Replacing Hard-swish with ReLU6 for better quantization performace
 
-**Problem statement**
-
+**Problem statement** 
 Given a targeted latency on the specific hardware, we aim to find an optimal neural network, based on neural architecture search (NAS) techniques, with highest accuracy while meeting the constraint.
  
-**Neural architecture search based on multivariate regression** 
-
+**Neural architecture search based on multivariate regression**  
 We referred to the method proposed in [Once-for-All](https://github.com/mit-han-lab/once-for-all), and proposed a novel search methodology based on multivariate regression to reduce the search space/time.
 
 We randomly sampled 300 different sub-networks from the super-network, and recorded their network architectures, characterized by 25 variables including numbers of layers, widths and kernel sizes, {\em etc.} We then use 50K validation data to measure the accuracy of each sub-network. These steps for data collection required only 0.5 GPU hour with one NVIDIA 2080Ti GPU. Meanwhile, we ran each sub-network on the target hardware to collect the latency data.
