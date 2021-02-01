@@ -20,7 +20,7 @@ Tested with tflite-runtime 2.1.0 on Raspberry Pi 4 (single core)
 
 ## Compared with MobileNetV3/MobileNetV2 on Raspberry Pi 4 CPU (single core)
 
-![](https://raw.githubusercontent.com/great8nctu/lpcvc20/master/figures/rpi4_cpu_compare.png)
+![](https://raw.githubusercontent.com/great8nctu/lpcvc20/master/figures/rpi4_cpu_compare_20210201.png)
 
 ## Training and Evaluation
 
