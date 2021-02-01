@@ -1,6 +1,6 @@
 # FoxPandaNet
 
-The 3rd place winner of the 2020 On-device Visual Intelligence Competition (OVIC) of Low-Power Computer Vision Challenge (LPCVC), subtrack of Real-time Image Classification on LG G8.
+The 3rd place winner of the 2020 On-device Visual Intelligence Competition ([OVIC](https://lpcv.ai/2020CVPR/ovic-track)) of Low-Power Computer Vision Challenge ([LPCVC](https://lpcv.ai/)), subtrack of Real-time Image Classification on LG G8.
 
 ## Methodology
 
