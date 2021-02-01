@@ -1,5 +1,7 @@
 # FoxPandaNet
 
+The 3rd place winner of the 2020 On-device Visual Intelligence Competition (OVIC) of Low-Power Computer Vision Challenge (LPCVC), subtrack of Real-time Image Classification on LG G8.
+
 ## Methodology
 
 + Neural architecture search with multivariate regression
