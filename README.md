@@ -46,9 +46,6 @@ $ python3 val_quant.py --tflite_model_file $TFLITE_FILE \
 + MobileNet V3 backbone
 + Replacing Hard-swish with ReLU6 for better quantization performace
 
-**Problem statement**                                                             
-Given a targeted latency on the specific hardware, we aim to find an optimal neural network, based on neural architecture search (NAS) techniques, with highest accuracy while meeting the constraint.
- 
-**Neural architecture search based on multivariate regression**  
+
 
 ![](https://raw.githubusercontent.com/great8nctu/lpcvc20/master/figures/FoxPanda_flowchart.png)
